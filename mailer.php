@@ -22,7 +22,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "gudamota@gmail.com";
+        $recipient = "leonardo.meira@cakenpop.com.br";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -40,11 +40,11 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Obrigado! Sua mensagem foi enviada com sucesso.";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "Oops! Algo deu errado enão recebemos sua mensagem.";
         }
 
     } else {
